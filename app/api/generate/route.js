@@ -10,6 +10,6 @@ export async function POST(request) {
   } else {
     let newdata = new Linker(realData);
     await newdata.save();
-    return Response.json({ success: true, massage: "Saced" });
+    return Response.json({ success: true, massage: "Saved!" });
   }
 }
