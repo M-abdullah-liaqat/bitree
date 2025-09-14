@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { Bounce } from "react-toastify";
 import { useRouter } from "next/navigation";
-function page() {
+function Page() {
   const router = useRouter();
   const [name, setname] = useState("");
   const [Picture, setPicture] = useState("");
@@ -214,4 +214,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

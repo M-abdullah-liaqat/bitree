@@ -2,7 +2,7 @@ import getOne from "../aboutDB/getOne";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-async function page({ params }) {
+async function Page({ params }) {
   let name = (await params).username;
   let dummy= "MY name is MY"
   let finalName= name.replaceAll("%20", " ")
@@ -90,4 +90,4 @@ async function page({ params }) {
   );
 }
 
-export default page;
+export default Page;
