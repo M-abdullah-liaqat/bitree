@@ -35,7 +35,7 @@ function Page() {
       Links: Links,
       profilrPicture: Picture,
     };
-    let res = await fetch("http://localhost:3000/api/generate", {
+    let res = await fetch("/api/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
